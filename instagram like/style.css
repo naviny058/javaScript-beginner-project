@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: rgb(97, 218, 212);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.continer{
+    height: 650px;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.continer img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position:top;
+    border-radius: 10px;
+}
+.continer i{
+    font-size: 80px;
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-10%,-10%) scale(0);
+    opacity: 0;
+    transition: transform ease 0.7s;
+}
