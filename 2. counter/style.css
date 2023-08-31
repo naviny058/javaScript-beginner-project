@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+   
+}
+
+.container {
+    text-align: center;
+}
+#count{
+    font-size: 30px;
+    color: purple;
+    
+}
+.counter{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.button{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
