@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    height: 100vh;
+    background-color: rgb(117, 38, 190);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 60%;
+    height: 250px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    box-shadow: 0 0 3px;
+}
+#timer{
+    width: 100%;
+    font-size: 72px;
+    text-align: center;
+    margin: 0px auto;
+    padding: 35px;
+}
+.button{
+    text-align: center;
+    margin: 0 10px;
+    border: none;
+}
