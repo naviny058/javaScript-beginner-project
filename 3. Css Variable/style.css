@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body {
+    background-color: #8e2bb4;
+    color: rgb(66, 255, 255);
+    padding: 10px 10px;
+  }
+  :root{
+    --spacing: 10px;
+    --blur: 10px;
+    --bcolor: #18FF14;
+  }
+img{
+  height: 300px;
+  width: 400px;
+  padding: var(--spacing);
+  filter: blur(var(--blur));
+  background-color: var(--bcolor);
+}
+span{
+  color: var(--bcolor)
+}
