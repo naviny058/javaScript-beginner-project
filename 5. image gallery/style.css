@@ -1,0 +1,81 @@
+html{
+  font-size: 20px;
+  font-weight: 200;
+  background-color: turquoise;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+*,*:before,*:after{
+  box-sizing: inherit;
+} 
+.panels{
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+}
+.panel{
+  background-color: yellowgreen;
+  text-align: center; 
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  background-size: cover;
+  background-position: center;
+  transition: 
+        font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        flex 0.7s cubic-bezier(0.61,-0.19,0.7,-0.11),
+        background 0.2s;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.panel1{
+  background-image: url("https://cdn.pixabay.com/photo/2016/08/11/23/48/mountains-1587287_640.jpg");
+}
+.panel2{
+  background-image: url("https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_640.jpg");
+}
+.panel3{
+  background-image: url("https://cdn.pixabay.com/photo/2018/01/12/14/24/night-3078326_640.jpg");
+}
+.panel4{
+  background-image: url("https://cdn.pixabay.com/photo/2016/10/21/14/50/plouzane-1758197_640.jpg");
+}
+.panel5{
+  background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg");
+}
+.panel >*{
+  margin: 0;
+  width: 100%;
+  transition: transform 0.5s;
+  /* border: 1px solid red; */
+  flex:1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.panel >*:first-child{transform: translateY(-100%);}
+.panel.open-active >*:first-child{transform: translateY(0);}
+.panel >*:last-child{transform: translateY(100%);}
+.panel.open-active >*:last-child{transform: translateY(0);}
+
+.panel p{
+  text-transform: uppercase;
+  font-family: cursive;
+  font-size: 2em;
+}
+.panel p:nth-child(2){
+  font-size: 4em;
+}
+.panel.open{
+  font-size: 40px;
+  flex: 5;
+}
+.cta{
+  color: white;
+  text-decoration: none;
+}
