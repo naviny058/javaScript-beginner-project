@@ -1,0 +1,67 @@
+body {
+    background-color: grey;
+    color: white;
+    font-family: sans-serif;
+    padding: 0 auto;
+}
+
+.box {
+    margin-top: 2rem;
+    height: 450px;
+    width: 300px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card img {
+    height: 200px;
+
+}
+
+.circle {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    left: 70px;
+    z-index: -1;
+}
+
+.types {
+    display: flex;
+    justify-content: space-around;
+}
+
+.types span {
+    background-color: green;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+}
+
+.div h4 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.div p {
+    font-size: 1.2rem;
+
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 1rem 1.4rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
